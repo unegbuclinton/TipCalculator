@@ -14,3 +14,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Open [https://tip-calculator-five-eosin.vercel.app/](https://tip-calculator-five-eosin.vercel.app/) to also view in your browser.
 The page will not reload when you make changes.
+
+## Technologies
+
+
+Frontend technologies used in building this project include:
+
+- React
+- Styled components
+- Context API
