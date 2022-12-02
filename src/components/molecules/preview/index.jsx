@@ -20,22 +20,38 @@ const PreviewComponenet = () => {
       <Header>Preview </Header>
       <ContentWrapper>
         <ContentHeader>Total Bill</ContentHeader>
-        <ContentText>{bill}</ContentText>
+        <ContentText>
+          {bill.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+          })}
+        </ContentText>
       </ContentWrapper>
 
       <ContentWrapper>
         <ContentHeader>Bill per Person</ContentHeader>
-        <ContentText>{perHead.toFixed(2)}</ContentText>
+        <ContentText>
+          {perHead.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+          })}
+        </ContentText>
       </ContentWrapper>
 
       <ContentWrapper>
         <ContentHeader>Total Tip</ContentHeader>
-        <ContentText>{tipCalc.toLocaleString()}</ContentText>
+        <ContentText>
+          {tipCalc.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+          })}
+        </ContentText>
       </ContentWrapper>
 
       <ContentWrapper>
         <ContentHeader>Tip per Person</ContentHeader>
-        <ContentText>{perHead.toFixed(2)}</ContentText>
+        <ContentText>
+          {perHead.toLocaleString(undefined, {
+            minimumFractionDigits: 2,
+          })}
+        </ContentText>
       </ContentWrapper>
     </Wrapper>
   );
